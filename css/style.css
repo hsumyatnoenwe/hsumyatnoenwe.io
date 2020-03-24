@@ -72,10 +72,21 @@
 
     /*Font size------------------------------------*/
       .blocks.greeting-info .greeting-header {
-        font-size: 1.875em;
+        font-size: 1.8em;
       }
-      .blocks.greeting-info .greeting-body {
+      .blocks.middle-section .user-name {
+        font-size: 1.2em;
+      }
+      .blocks.greeting-info .greeting-body
+      {
         font-size: 1em;
+      }
+      .blocks.middle-section .user-work {
+        font-size: 0.8em;
+      }
+      .blocks.contact-info .contact-phone a,
+      .blocks.contact-info .contact-mail a {
+        font-size: 0.8em;
       }
     /*=============================================*/
 
@@ -85,34 +96,97 @@
       .blocks.greeting-info .greeting-body {
         color: #FFFFFF;
       }
+
+      .blocks.middle-section .user-text a,
+      .blocks.middle-section .user-work a {
+        color: #464646;
+      }
+
+      .blocks.middle-section .pink-text {
+        color: #FB416D;
+      }
+
+      .blocks.contact-info .contact-phone a,
+      .blocks.contact-info .contact-mail a {
+        color: #6D6D6D;
+      }
     /*=============================================*/
 
+    /*Line Height ---------------------------------*/
+      .blocks.greeting-info .greeting-header {
+        line-height: 45px;
+      }
+      .blocks.middle-section .user-text,
+      .blocks.greeting-info .greeting-body {
+        line-height: 24px;
+      }
 
+      .blocks.contact-info .contact-phone a,
+      .blocks.contact-info .contact-mail a {
+        line-height: 19px;
+      }
+
+    /*Font Weight ---------------------------------*/
+      .blocks.middle-section .user-name {
+        font-weight: 500;
+      }
+      .blocks.middle-section .user-text {
+        font-weight: normal;
+      }
+/*===================================================*/
+
+/*Page ----------------------------------------------*/
+  #page {
+    position: relative;
+    z-index: 15;
+  }
+  .page-inner {
+    position: relative;
+    z-index: 10;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .page-inner-content {
+    width: 100%;
+    max-width: 1030px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    z-index: 10;
+  }
 
 /*===================================================*/
 
-  #page {
-    position: relative;
-    z-index: 13;
-  }
 
 /*Elipse Block---------------------------------------*/
   .blocks.ellipse-info {
     position: absolute;
-    z-index: 10;
-    top: 19px;
+    z-index: -1;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    pointer-events: none;
   }
-
-  .blocks.ellipse-item {
+  .blocks.ellipse-info .blocks-inner {
+    width: 1111px;
+    height: 970px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .blocks.ellipse-info .blocks-content {
     background-image: url("../images/ellipse.svg");
     background-repeat: no-repeat;
-    background-size: auto;
-    background-position: left center;
-    width: 100%;
-    height: 879px;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    z-index: 10;
+    top: 19px;
+    left: -360px;
+    width: 1111px;
+    height: 970px;
   }
 
 
@@ -120,31 +194,89 @@
 
 
 /*Header ---------------------------------------------*/
-  .blocks.logo-info .logo {
+  .blocks.logo-info {
+    position: absolute;
+    z-index: 11;
+    top: 50px;
+    left: 0;
+    width: 100%;
+  }
+  .blocks.logo-info .logo a {
+    display: block;
     background-image: url("../images/logo.svg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center center;
     width: 100%;
     height: 30px;
-    padding-top: 50px;
   }
 
 /*=====================================================*/
 
 /*First Section --------------------------------------*/
-  .blocks.greeting-info {
-    max-width: 1130px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .blocks.first-section {
-    position: relative;
-    z-index: 15;
+    margin-bottom: 47px;
   }
-
-
+  .blocks.greeting-info .greeting-header {
+    margin-bottom: 5px;
+  }
 
 /*=====================================================
+
+/*Middle Section --------------------------------------*/
+  .blocks.middle-section .blocks-content {
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    align-items: center;
+  }
+  .blocks.middle-section .user-pic {
+    background-image: url("../images/userpic.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    width: 242px;
+    height: 242px;
+  }
+  .blocks.middle-section .user-name {
+    margin-bottom: 15px;
+  }
+  .blocks.middle-section .user-text .blue-border {
+    display: inline-block;
+    border-bottom: 3px solid #2CB3FF;
+  }
+  .blocks.middle-section .user-work {
+    margin-top: 40px;
+  }
+  .blocks.middle-section .user-text p {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .blocks.middle-section .user-work a {
+    display: inline-block;
+    background-image: url("../images/see-work.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 15px;
+    background-size: auto;
+  }
+/*=====================================================
+
+/*Footer --------------------------------------------*/
+
+  .blocks.contact-info {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+  }
+  .blocks.contact-info .blocks-content {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+
+
+
+
+/*===================================================*/
