@@ -1,4 +1,4 @@
- Default
+/* Default
 -----------------------------------------------------*/
   * {
       outline: none !important;
@@ -7,11 +7,11 @@
       box-sizing: border-box;
     }
     ::-moz-selection {
-       background-color: #FDDF59;
+       background-color: #FF2C5F;
        color: #FF5858;
     }
     ::selection {
-       background-color: #FDDF59;
+       background-color: #FF2C5F;
        color: #FF5858;
     }
     html,
@@ -105,7 +105,7 @@
       }
 
       .blocks.middle-section .user-text a,
-      .blocks.middle-section .user-work a {
+      .blocks.middle-section .user-work p {
         color: #464646;
       }
 
@@ -124,8 +124,12 @@
       }
 
       .slide-details .work-place p {
+        color: #FFFFFF;
+      }
+      .slide-details .work-place p.color-update {
         color: #8A8A8A;
       }
+
     /*=============================================*/
 
     /*Line Height ---------------------------------*/
@@ -189,15 +193,15 @@
   .blocks.greeting-info .greeting-wrapper {
     position: relative;
     z-index: 20;
+    margin-bottom: 47px;
   }
   .blocks.greeting-info .greeting-header,
   .blocks.greeting-info .greeting-body {
-    transition: 0.3s color;
+    transition: 0.8s color;
   }
   .page-middle-content {
     position: relative;
     z-index: 10;
-/*    min-height: 100vh;*/
     display: flex;
     width: 200%;
     align-items: center;
@@ -256,9 +260,14 @@
     display: inline-block;
     position: relative;
     z-index: 10;
+    margin-top: 59px;
     padding-left: 35px;
     padding-top: 5px;
     padding-bottom: 5px;
+    transition: 0.8s color;
+  }
+  .last-layer-wp a:hover {
+    color: #FF2C5F;
   }
   .last-layer-wp .blocks-inner {
     opacity: 0;
@@ -292,7 +301,7 @@
     position: absolute;
     z-index: 9;
     left: -595px;
-    top: -250px;
+    top: -218px;
     width: 1112px;
   }
   .blocks.ellipse-info svg {
@@ -389,13 +398,17 @@
     display: block;
     margin-bottom: 5px;
   }
-  .blocks.middle-section .user-work a {
+  .blocks.middle-section .user-work p {
     display: inline-block;
     background-image: url("../images/see-work.svg");
     background-repeat: no-repeat;
     background-position: right center;
     padding-right: 15px;
     background-size: auto;
+    transition: 0.8s all;
+  }
+  .blocks.middle-section .user-work p:hover {
+    color: #ffffff;
   }
   .blocks.contact-info .contact-phone a,
   .blocks.contact-info .contact-mail a {
@@ -437,13 +450,19 @@
   }
   .blocks.contact-info .blocks-content {
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto auto;
     grid-gap: 20px;
   }
 
   .blocks.contact-info .contact-phone a,
   .blocks.contact-info .contact-mail a {
     display: block;
+    transition: 0.8s opacity;
+  }
+
+  .blocks.contact-info .contact-phone a:hover,
+  .blocks.contact-info .contact-mail a:hover {
+    opacity: 0.5;
   }
 
 /*===================================================*/
@@ -467,6 +486,11 @@
     background-position: left center;
     padding-left: 20px;
     background-size: auto;
+    opacity: 1;
+    transition: 0.8s opacity;
+  }
+  .blocks.work-vector-info .vector-txt a:hover {
+    opacity: 0.8;
   }
 
 
@@ -475,7 +499,7 @@
 
 /* Sliders _____________________________________________*/
   .slide-details .work-logo {
-    width: 306px;
+    width: 100%;
     height: 194px;
     display: flex;
     justify-content: center;
@@ -545,19 +569,28 @@
     padding-top: 20px;
     padding-bottom: 8px;
   }
+  .work-slider-wp {
+    margin-left: -80px;
+  }
   .work-slider-wp .slick-list {
-    margin-right: -99px;
     overflow: visible;
   }
+  .work-slider-wp .slick-list.no-overflow {
+    overflow: hidden;
+  }
   .work-slider-wp .slick-track {
-    display: flex;
+  }
+  .removetransform {
+    transform: translate3d(0px, 0px, 0px);
   }
   .work-slider-wp .slick-slide {
-    float: none;
-    margin-right: 99px;
-    padding-left: 6px;
+    float: left;
+    padding-left: 80px;
   }
 
+  .slide-details .work-place p {
+    transition: 0.3s color;
+  }
 
 
 
