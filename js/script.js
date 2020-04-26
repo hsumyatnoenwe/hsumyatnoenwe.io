@@ -27,7 +27,23 @@ $(document).ready(function(){
   	arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-		infinite: false
+		infinite: false,
+		 responsive: [
+      {
+        breakpoint: 1130,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+      	breakpoint: 600,
+      	settings: {
+      		slidesToShow: 1,
+      		slidesToScroll: 1
+      	}
+      }
+     ]
   });
 
 	$(".blocks.work-vector-info .vector-txt a").click(function(){
@@ -36,6 +52,7 @@ $(document).ready(function(){
 		$(".last-layer-wp .blocks-inner").addClass("show-goback");
 		$("body").addClass("switch-color");
 		$(".work-slider-wp .slick-list").removeClass("no-overflow");
+		$(".last-layer-wp a").addClass("show-arrow");
 
 		calcwidth();
 
@@ -50,6 +67,7 @@ $(document).ready(function(){
 		$(".last-layer-wp .blocks-inner").removeClass("show-goback");
 		$("body").removeClass("switch-color");
 		$(".work-slider-wp .slick-list").addClass("no-overflow");
+		$(this).removeClass("show-arrow");
 
 		slider.slick('slickGoTo', 0);
 

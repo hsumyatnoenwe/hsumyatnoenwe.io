@@ -265,6 +265,10 @@
     padding-top: 5px;
     padding-bottom: 5px;
     transition: 0.8s color;
+    pointer-events: none;
+  }
+  .last-layer-wp a.show-arrow {
+    pointer-events: auto;
   }
   .last-layer-wp a:hover {
     color: #FF2C5F;
@@ -413,6 +417,20 @@
   .blocks.contact-info .contact-phone a,
   .blocks.contact-info .contact-mail a {
     transition: 0.8s color;
+  }
+
+  body,
+  .blocks.logo-info .logo svg path,
+  .blocks.ellipse-info svg path,
+  .switch-color .all-item-wrapper,
+  .switch-color .blocks.up-right-dots svg circle,
+  .switch-color .blocks.bottom-left-dots svg circle,
+  .switch-color .blocks.contact-info .contact-phone a,
+  .switch-color .blocks.contact-info .contact-mail a,
+  .switch-color .blocks.greeting-info .greeting-header,
+  .switch-color .blocks.greeting-info .greeting-body
+  {
+    transition: 0.8s all;
   }
 
   .switch-color .blocks.logo-info .logo svg path {
