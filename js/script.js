@@ -15,10 +15,10 @@ $(document).ready(function(){
 
 		$(".work-slider-wp .slick-slide").each(function(){
 			if ($(this).offset().left <= allw) {
-				$(".work-place p", this).addClass("color-update");
+				$(".work-place a", this).addClass("color-update");
 			}
 			else {
-				$(".work-place p", this).removeClass("color-update");
+				$(".work-place a", this).removeClass("color-update");
 			}
 		})
 	}

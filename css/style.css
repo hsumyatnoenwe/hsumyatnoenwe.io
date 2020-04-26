@@ -84,7 +84,7 @@
         font-size: 0.8em;
       }
       .slide-details .work-name p,
-      .slide-details .work-place p,
+      .slide-details .work-place a,
       .last-layer-wp a {
         font-size: 0.875em;
       }
@@ -123,10 +123,10 @@
         color: #FF2C9E;
       }
 
-      .slide-details .work-place p {
+      .slide-details .work-place a {
         color: #FFFFFF;
       }
-      .slide-details .work-place p.color-update {
+      .slide-details .work-place a.color-update {
         color: #8A8A8A;
       }
 
@@ -606,7 +606,7 @@
     padding-left: 80px;
   }
 
-  .slide-details .work-place p {
+  .slide-details .work-place a {
     transition: 0.3s color;
   }
 
