@@ -15,6 +15,9 @@
 	.blocks.ellipse-info {
 		top: -134px;
 	}
+	.slide-left {
+		left: 0;
+	}
 }
 
 @media only screen and (max-width: 1130px) {
@@ -94,5 +97,8 @@
 	}
 	.slide-details:nth-child(3) .work-name p, .slide-details:nth-child(7) .work-name p, .slide-details:nth-child(11) .work-name p {
 		color: #FFFFFF;
+	}
+	.slide-left {
+		left: 0;
 	}
 }
