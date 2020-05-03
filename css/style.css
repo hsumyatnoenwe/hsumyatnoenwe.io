@@ -410,13 +410,14 @@
     padding-right: 15px;
     background-size: auto;
     transition: 0.8s all;
+    cursor: pointer;
   }
   .blocks.middle-section .user-work p:hover {
     color: #ffffff;
   }
   .blocks.contact-info .contact-phone a,
   .blocks.contact-info .contact-mail a {
-    transition: 0.8s color;
+    transition: 0.8s all;
   }
 
   body,
@@ -475,7 +476,6 @@
   .blocks.contact-info .contact-phone a,
   .blocks.contact-info .contact-mail a {
     display: block;
-    transition: 0.8s opacity;
   }
 
   .blocks.contact-info .contact-phone a:hover,

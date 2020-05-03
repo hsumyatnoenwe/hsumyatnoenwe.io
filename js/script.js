@@ -46,7 +46,7 @@ $(document).ready(function(){
      ]
   });
 
-	$(".blocks.work-vector-info .vector-txt a").click(function(){
+	$(".see-work").click(function(){
 		$(".page-middle-content").addClass("slide-left");
 		$(".second-div").addClass("second-div-left");
 		$(".last-layer-wp .blocks-inner").addClass("show-goback");
