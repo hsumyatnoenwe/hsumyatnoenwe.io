@@ -422,13 +422,13 @@
   body,
   .blocks.logo-info .logo svg path,
   .blocks.ellipse-info svg path,
-  .switch-color .all-item-wrapper,
-  .switch-color .blocks.up-right-dots svg circle,
-  .switch-color .blocks.bottom-left-dots svg circle,
-  .switch-color .blocks.contact-info .contact-phone a,
-  .switch-color .blocks.contact-info .contact-mail a,
-  .switch-color .blocks.greeting-info .greeting-header,
-  .switch-color .blocks.greeting-info .greeting-body
+  .all-item-wrapper,
+  .blocks.up-right-dots svg circle,
+  .blocks.bottom-left-dots svg circle,
+  .blocks.contact-info .contact-phone a,
+  .blocks.contact-info .contact-mail a,
+  .blocks.greeting-info .greeting-header,
+  .blocks.greeting-info .greeting-body
   {
     transition: 0.8s all;
   }
