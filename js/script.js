@@ -47,12 +47,12 @@ $(document).ready(function(){
   });
 
 	$(".see-work").click(function(){
-		$(".page-middle-content").addClass("slide-left");
-		$(".second-div").addClass("second-div-left");
-		$(".last-layer-wp .blocks-inner").addClass("show-goback");
-		$("body").addClass("switch-color");
-		$(".work-slider-wp .slick-list").removeClass("no-overflow");
-		$(".last-layer-wp a").addClass("show-arrow");
+		$(".page-middle-content").toggleClass("slide-left");
+		$(".second-div").toggleClass("second-div-left");
+		$(".last-layer-wp .blocks-inner").toggleClass("show-goback");
+		$("body").toggleClass("switch-color");
+		$(".work-slider-wp .slick-list").toggleClass("no-overflow");
+		$(".last-layer-wp a").toggleClass("show-arrow");
 
 		calcwidth();
 
