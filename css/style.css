@@ -593,7 +593,8 @@
     padding-bottom: 8px;
   }
   .slide-details .work-type {
-    padding: 5px 0px;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
   .work-slider-wp {
     margin-left: -80px;
