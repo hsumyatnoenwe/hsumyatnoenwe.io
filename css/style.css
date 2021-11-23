@@ -462,6 +462,9 @@
   .switch-color .blocks.greeting-info .greeting-body {
     color: #FF2C5F;
   }
+  .slide-details .work-type p .wt-switch-color {
+    color: #FDB600;
+  }
 /*=====================================================
 
 /*Footer --------------------------------------------*/
