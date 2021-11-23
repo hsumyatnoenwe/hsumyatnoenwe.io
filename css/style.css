@@ -85,7 +85,8 @@
       }
       .slide-details .work-name p,
       .slide-details .work-place a,
-      .last-layer-wp a {
+      .last-layer-wp a ,
+      .slide-details .work-type p {
         font-size: 0.875em;
       }
       .blocks.work-vector-info .vector-txt a {
@@ -402,6 +403,9 @@
     display: block;
     margin-bottom: 5px;
   }
+  .blocks.middle-section .work-type p {
+    display: block;
+  }
   .blocks.middle-section .user-work p {
     display: inline-block;
     background-image: url("../images/see-work.svg");
@@ -586,6 +590,9 @@
   .slide-details .work-name {
     padding-top: 20px;
     padding-bottom: 8px;
+  }
+  .slide-details .work-type {
+    padding: 10px 0px;
   }
   .work-slider-wp {
     margin-left: -80px;
