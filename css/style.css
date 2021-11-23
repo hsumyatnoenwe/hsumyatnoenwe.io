@@ -281,7 +281,7 @@
     cursor: unset;
   }
   .show-goback {
-    opacity: 1 !important;
+    opacity: 0;
     cursor: pointer; 
   }
   .last-layer-wp a::before {

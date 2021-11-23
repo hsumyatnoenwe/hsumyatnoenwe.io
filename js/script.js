@@ -49,10 +49,9 @@ $(document).ready(function(){
 	$(".see-work").click(function(){
 		$(".page-middle-content").toggleClass("slide-left");
 		$(".second-div").toggleClass("second-div-left");
-		$(".last-layer-wp .blocks-inner").toggleClass("show-goback");
 		$("body").toggleClass("switch-color");
 		$(".work-slider-wp .slick-list").toggleClass("no-overflow");
-		$("slide-details .work-type p").toggleClass("wt-switch-color");
+		$(".slide-details .work-type p").toggleClass("wt-switch-color");
 		e.preventDefault();
 
 		calcwidth();
