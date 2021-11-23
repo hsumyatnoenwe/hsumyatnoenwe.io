@@ -608,8 +608,6 @@
   .work-slider-wp .slick-list.no-overflow {
     overflow: hidden;
   }
-  .work-slider-wp .slick-track {
-  }
   .removetransform {
     transform: translate3d(0px, 0px, 0px);
   }
