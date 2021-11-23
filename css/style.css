@@ -462,7 +462,8 @@
   .switch-color .blocks.greeting-info .greeting-body {
     color: #FF2C5F;
   }
-  .switch-color .slide-details .work-type p .wt-switch {
+  .switch-color .slide-details .work-type .wt-switch {
+    display: block;
     color: #FDB600;
   }
 /*=====================================================
