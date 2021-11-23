@@ -406,6 +406,7 @@
   }
   .blocks.middle-section .work-type p {
     display: block;
+    transition: 0.8s all;
   }
   .blocks.middle-section .user-work p {
     display: inline-block;
