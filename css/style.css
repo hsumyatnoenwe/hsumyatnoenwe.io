@@ -120,7 +120,8 @@
         color: #6D6D6D;
       }
 
-      .blocks.work-vector-info .vector-txt a {
+      .blocks.work-vector-info .vector-txt a,
+      .slide-details .work-type p {
         color: #FF2C9E;
       }
 
@@ -592,7 +593,7 @@
     padding-bottom: 8px;
   }
   .slide-details .work-type {
-    padding: 10px 0px;
+    padding: 5px 0px;
   }
   .work-slider-wp {
     margin-left: -80px;
