@@ -53,6 +53,7 @@ $(document).ready(function(){
 		$("body").toggleClass("switch-color");
 		$(".work-slider-wp .slick-list").toggleClass("no-overflow");
 		$(".slide-details .work-type p").toggleClass("wt-switch");
+		$(".blocks.middle-section .pink-text").toggleClass("name-switch");
 		e.preventDefault();
 
 		calcwidth();

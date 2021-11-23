@@ -113,6 +113,10 @@
       .blocks.middle-section .pink-text {
         color: #FB416D;
       }
+      .blocks.middle-section .name-switch {
+        transition: 0.5s all;
+        color: #FDB600;
+      }
 
       .blocks.contact-info .contact-phone a,
       .blocks.contact-info .contact-mail a,
