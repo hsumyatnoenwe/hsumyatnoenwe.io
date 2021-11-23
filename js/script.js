@@ -51,7 +51,7 @@ $(document).ready(function(){
 		$(".second-div").toggleClass("second-div-left");
 		$("body").toggleClass("switch-color");
 		$(".work-slider-wp .slick-list").toggleClass("no-overflow");
-		$(".slide-details .work-type p").toggleClass("wt-switch-color");
+		$(".slide-details .work-type p").toggleClass("wt-switch");
 		e.preventDefault();
 
 		calcwidth();
