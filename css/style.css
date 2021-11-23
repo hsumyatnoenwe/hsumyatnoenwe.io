@@ -409,9 +409,9 @@
   }
   .blocks.middle-section .user-work p {
     display: inline-block;
-    background-image: url("../images/see-work.svg");
+    /* background-image: url("../images/see-work.svg");
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right center; */
     padding-right: 15px;
     background-size: auto;
     transition: 0.8s all;
