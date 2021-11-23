@@ -112,9 +112,10 @@
 
       .blocks.middle-section .pink-text {
         color: #FB416D;
+        transition: 0.8s all;
       }
       .blocks.middle-section .name-switch {
-        transition: 0.5s all;
+        transition: 0.8s all;
         color: #FDB600;
       }
 
